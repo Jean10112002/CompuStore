@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+.contactanos__header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactanos__imagen{
+    width: 60%;
+}
+.contactanos__imagen img{
+    width: 100%;
+}
+.contactanos__texto h1{
+    color: rgb(79, 236, 47);
+}
+
+
+
+
+
+/* contacto */
+.results{
+    background-color: rgba(255, 5, 5, 0.829);
+    padding-top: 30px;
+    
+}
+.conten-results{
+    display: flex;
+    justify-content: space-evenly;
+}
+.numbers{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.numbers .number{
+    width: 45%;
+    background: rgb(180, 22, 22);
+    color: white;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+.numbers .number:hover{
+    transition: box-shadow .5s linear;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.281);
+}
+.numbers .number h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.numbers .number p{
+    color: #f2f5fc;
+    font-weight: 300;
+}
+.results-text{
+    width: 40%;
+    margin: auto 0;
+    margin-left: 40px;
+}
+.results-text h4{
+    color: white;
+    font-size: 40px;
+}
+.results-text p{
+    color: white;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.results-text>a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 2px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.number i{
+    color: #1fde82;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:636px){
+    
+    .contactanos__imagen{
+        width: 100%;
+    }
+
+   
+
+    .conten-results{
+    flex-direction: column-reverse;
+   
+    }
+    .numbers{
+        width: 100%;
+    }
+    .results{
+        margin-top: 20px;
+        
+    }
+    .results-text{
+        width: 100%;
+        margin: auto 0;
+        margin-left: 0px;
+    }
+    .contactanos__texto h1{
+        font-size: 40px;
+    }
+   
+    .numbers .number{
+        width: 100%;
+    }
+
+ 
+}
+
+@media screen and (max-width:400px){
+  
+    .logo__principal__inicio{
+        flex-direction: column;
+    }
+    .logo__principial{
+        width: 100%;
+    }
+    .logo__informacion{
+        margin-top: -40px;
+    }
+
+    .contactanos__header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ 
+   
+  
+}
